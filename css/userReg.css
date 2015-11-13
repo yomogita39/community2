@@ -1,0 +1,249 @@
+@CHARSET "UTF-8";
+
+/*=================================
+ログイン画面
+=================================*/
+.frame_login_image {
+	width: 1024px;
+	height: 768px;
+	background-image: url("../templates/image/top_graphic.png");
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.frame_login {
+	font-weight: bold;
+	position: absolute;
+	top: 80px;
+	right: 90px;
+	width: 280px;
+	height: 180px;
+}
+
+.frame_login_title {
+	font-size: 20px;
+	padding: 3px;
+	text-align: center;
+}
+
+.frame_login_table {
+	font-size: 15px;
+	width: 280px;
+}
+
+.input_login {
+	width: 150px;
+	height: 20px;
+	font-size: 15px;
+	border: 2px solid #0000ff;
+	margin-top: 5px;
+}
+
+.position_button_login {
+	position: absolute;
+	bottom: 30px;
+	left: 10px;
+}
+
+.position_button_userReg {
+	position: absolute;
+	bottom: 30px;
+	left: 146px;
+}
+
+.image_topTitle {
+	width: 984px;
+	height: 450px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.position_link_changePass {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.link_login {
+	font-size: 13px;
+	height: 40px;
+	font-style: italic;
+	color: #ff4000;
+}
+
+.position_image_isbLogo {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	text-align: right;
+}
+
+.image_isbLogo {
+	height: 13%;
+	width: 13%;
+	border-style:none;
+}
+
+/*=================================
+ユーザ登録画面
+=================================*/
+.frame_userReg {
+	top: 0px;
+	font-weight: bold;
+	margin: 0px auto;
+	background-color: #ffe4e1;
+	border: 2px solid #a52a2a;
+	width: 850px;
+/*	height: 570px; */
+	position: relative;
+}
+
+.frame_userReg_title {
+	background-color: #a52a2a;
+	font-size: 30px;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+}
+
+.frame_input_userReg {
+	font-weight: bold;
+	margin: 15px auto;
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	width: 780px;
+	padding: 15px;
+	position: relative;
+}
+
+.input_userReg_caption {
+	font-size: 22px;
+}
+
+.input_userReg_table {
+	font-size: 20px;
+	margin-left: 30px;
+	border-spacing: 15px 10px;
+}
+
+.input_userReg_label {
+	font-weight: bold;
+	text-align: left;
+	color: #002060;
+}
+
+.input_userReg {
+	width: 350px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.select_gender {
+	width: 120px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.select_date {
+	width: 70px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.triangle {
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 30px solid #000000;
+	border-right: 40px solid transparent;
+}
+
+.triangle2 {
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid #ffe4e1;
+	border-left: 40px solid transparent;
+}
+
+.triangle3 {
+	position: absolute;
+	bottom: 2px;
+	right: 4px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 24px solid #d3d3d3;
+	border-right: 32px solid transparent;
+}
+
+.button_right_s {
+	font-weight: bold;
+	position: absolute;
+	bottom: -55px;
+	right: 0px;
+	width: 170px;
+	height: 40px;
+	font-size: 20px;
+	color: #ff0000;
+	background-image: url("../templates/image/button_next.png");
+	background-repeat: no-repeat;
+	border: 1px solid #ffe4e1;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+.button_left_s {
+	font-weight: bold;
+	position: absolute;
+	bottom: -55px;
+	left: 0px;
+	width: 170px;
+	height: 40px;
+	font-size: 20px;
+	background-image: url("../templates/image/button_back.png");
+	background-repeat: no-repeat;
+	border: 1px solid #ffe4e1;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+.height_50 {
+	height: 50px;
+}
+
+/*=================================
+ユーザ登録確認画面
+=================================*/
+.input_confirm_td {
+	font-size: 20px;
+	height: 30px;
+	padding-left: 30px;
+}
+
+/*=================================
+ユーザ仮登録結果画面
+=================================*/
+.button_right_l {
+	font-weight: bold;
+	position: absolute;
+	bottom: -55px;
+	right: 0px;
+	width: 230px;
+	height: 40px;
+	font-size: 20px;
+	background-image: url("../templates/image/button_next_big.png");
+	background-repeat: no-repeat;
+	border: 1px solid #ffe4e1;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}

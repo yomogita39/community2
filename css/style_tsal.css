@@ -1,0 +1,1522 @@
+@CHARSET "UTF-8";
+
+/*=================================
+ホーム画面
+=================================*/
+.frame_page {
+	width: 1000px;
+	min-height: 538px;
+	background-color: #ffffff;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 60px;
+}
+
+.frame_home_left {
+	width: 230px;
+	font-weight: bold;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.frame_image {
+	background-color: #ffffff;
+	border: 3px solid #a52a2a;
+	width: 160px;
+	padding: 10px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.login_time {
+	font-size: 12px;
+	font-weight: normal;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.frame_home_left_bottom {
+	width: 210px;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.frame_home_center {
+	margin-left: 230px;
+	padding-bottom: 10px;
+	width: 440px;
+	font-size: 15px;
+	min-height: 910px;
+}
+
+.frame_home_right {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 310px;
+	font-size: 15px;
+}
+
+.frame_home_center_format {
+	padding-top: 10px;
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+.frame_home_right_format {
+	padding-top: 10px;
+}
+
+/* 圃場状態 */
+.frame_farm {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.image_farm {
+	border: 1px solid #000000;
+	width: 200px;
+	height: 150px;
+}
+
+.table_farmState {
+	width: 202px;
+	border-collapse: collapse;
+	margin: 10px auto;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 15px;
+}
+
+.td_farmStateLabel {
+	width: 85px;
+	height: 25px;
+	text-align: left;
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+.td_farmStateValue {
+	text-align: left;
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+/* インフォメーション */
+.information {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	color: #ff0000;
+}
+
+.ul_information {
+	margin-top: 5px;
+}
+.li_information {
+	margin-bottom: 5px;
+	margin-left: -20px;
+	width: 400px;
+	word-wrap: break-word;
+	word-break: break-all;
+	color: #000000;
+}
+
+/* ひとり言 */
+.textarea_mutter {
+	resize: none;
+	width: 415px;
+	height: 70px;
+	border: 1px solid #000000;
+}
+
+.table_public {
+	width: 417px;
+	border-collapse: collapse;
+}
+
+.select_public {
+	width: 150px;
+	font-size: 15px;
+	border: 1px solid #000000;
+}
+
+.table_mutterList {
+	width: 417px;
+}
+
+.tr_mutterList {
+	vertical-align: top;
+}
+
+.td_mutterListImage {
+	width: 60px;
+}
+
+.td_mutterListMessage {
+	width: 300px;
+	height: 65px;
+	border: 1px solid #c0bfbf;
+	font-size: 13px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+/* 日記 */
+.table_homeDiaryList {
+	width: 417px;
+	border-collapse: collapse;
+	font-size: 13px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_homeDiaryListDate {
+	width: 70px;
+	text-align: center;
+}
+
+.td_homeDiaryListUserName {
+	width: 125px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.td_homeDiaryListTitle {
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+/* 友達リスト */
+.table_friendList {
+	width: 300px;
+	text-align: center;
+	font-size: 13px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_friendList {
+	width: 100px;
+	vertical-align: top;
+}
+
+.position_homeUnreadCount {
+	position: relative;
+}
+
+.homeUnreadCount1 {
+	position: absolute;
+	bottom: 0px;
+	right: -6px;
+	width: 18px;
+	height: 17px;
+	font-size: 13px;
+	color: #ffffff;
+	background-image: url("../templates/image/new1.png");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.homeUnreadCount2 {
+	position: absolute;
+	bottom: 0px;
+	right: -9px;
+	width: 25px;
+	height: 17px;
+	font-size: 13px;
+	color: #ffffff;
+	background-image: url("../templates/image/new2.png");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.homeUnreadCount3 {
+	position: absolute;
+	bottom: 0px;
+	right: -13px;
+	width: 32px;
+	height: 17px;
+	font-size: 13px;
+	color: #ffffff;
+	background-image: url("../templates/image/new3.png");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+/* 暦 */
+.td_homeCalendarLabel {
+	width: 50px;
+	height: 25px;
+	text-align: left;
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+.td_homeCalendarfarmStateValue {
+	text-align: left;
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+/* 二十四節気ダイアログ */
+.position_table_season24 {
+	position: relative;
+	width: 440px;
+}
+
+.table_season24 {
+	width: 210px;
+	text-align: center;
+	font-size: 15px;
+	border-collapse: collapse;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.th_season24 {
+	border: 1px solid #c0bfbf;
+	background-color: #04B404;
+	padding: 3px;
+}
+
+.td_season24_name {
+	border: 1px solid #c0bfbf;
+	padding: 3px;
+}
+
+.td_season24_date {
+	border: 1px solid #c0bfbf;
+	padding: 3px;
+}
+
+.position_table_season24_half {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+/*=================================
+タイムライン画面
+=================================*/
+.frame_page_timeLine {
+	width: 1000px;
+	min-height: 720px;
+	background-color: #ffffff;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 60px;
+}
+
+/* メッセージ入力 */
+.timeLine_userImage {
+	background-color: #ffffff;
+	border: 3px solid #a52a2a;
+	width: 160px;
+	padding: 10px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.frame_timeLine_input {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 390px;
+	height: 100%;
+}
+
+.h3_timeLine {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.table_timeLine_input {
+	position: relative;
+	width: 350px;
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+
+.td_timeLine_input {
+	text-align: left;
+	vertical-align: top;
+}
+
+.table_timeLine_input2 {
+	border-collapse: collapse;
+	font-size: 15px;
+}
+
+.balloon_input {
+	position: relative;
+	background-color: #b9cde5;
+	padding: 15px;
+	border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px;
+}
+
+.balloon_input_triangle {
+	position: absolute;
+	bottom: -50px;
+	left: 150px;
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 25px solid transparent;
+	border-top: 40px solid #b9cde5;
+}
+
+.textarea_timeLine {
+	resize: none;
+	width: 312px;
+	height: 130px;
+	font-size: 16px;
+}
+
+.input_timeLine_imageFile {
+	font-size: 15px;
+	border: 2px solid #0000ff;
+	width: 312px;
+	margin-top: 5px;
+}
+
+.position_button_contribute {
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+	color: #ff0000;
+}
+
+/* メッセージ表示 */
+.frame_tree {
+	position: absolute;
+	bottom: -12%;
+	right: 250px;
+	background-color: #a52a2a;
+	border: 2px solid #a52a2a;
+	width: 100px;
+	height: 47%;
+}
+
+.frame_timeLine {
+	background-color: #ffffff;
+	position: absolute;
+	top: 125px;
+	left: 400px;
+	width: 600px;
+/*	height: 83%;*/
+	height: 75%;
+}
+
+.position_timeLine {
+	position: relative;
+	height: 100%;
+}
+
+.frame_timeLine_message {
+	background-color: #ffe4e1;
+	overflow: auto;
+	height: 94%;
+	border: 3px solid #a52a2a;
+	padding: 10px;
+}
+
+.table_timeLineMember {
+	margin-left: auto;
+	max-width: 550px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_timeLineMember_image {
+	width: 100px;
+	text-align: center;
+	vertical-align: top;
+	font-size: 13px;
+}
+
+.image_timeLineMember {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	width: 80px;
+	height: 80px;
+}
+
+.table_timeLineMyself {
+	max-width: 440px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.balloon_myself {
+	position: relative;
+	margin-left: 20px;
+	background-color: #b9cde5;
+	border: 4px solid #b9cde5;
+	padding: 10px;
+	border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px;
+}
+
+.balloon_myself_triangle {
+	position: absolute;
+	top: 15px;
+	left: -30px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 20px solid #b9cde5;
+	border-left: 30px solid transparent;
+}
+
+.balloon_member {
+	position: relative;
+	margin-right: 30px;
+	background-color: #ffffff;
+	border: 4px solid #ffffff;
+	padding: 10px;
+	border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px;
+}
+
+.balloon_member_triangle {
+	position: absolute;
+	top: 15px;
+	right: -30px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 20px solid #ffffff;
+	border-right: 30px solid transparent;
+}
+
+.position_button_update {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.position_button_timeLine {
+	margin-top: 10px;
+	position: relative;
+}
+
+/*=================================
+グループホーム画面
+=================================*/
+.position_imageArrow {
+	margin: 0px auto;
+	width: 187px;
+	text-align: center;
+}
+
+.frame_groupHome {
+	margin-left: 230px;
+	padding-bottom: 10px;
+	width: 745px;
+	font-size: 15px;
+}
+
+/*=================================
+グループ作成画面
+=================================*/
+.table_createGroup {
+	margin-left: 0px;
+	border-collapse: collapse;
+	width: 650px;
+	font-size: 16px;
+}
+
+.td_createGroup_label {
+	border: 1px solid #c0bfbf;
+	padding: 10px;
+	width: 120px;
+}
+
+.td_createGroup_value {
+	border: 1px solid #c0bfbf;
+	padding: 10px;
+}
+
+.input_groupInfo {
+	width: 480px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.position_createButton {
+	position: absolute;
+	bottom: -52px;
+	right: 0px;
+}
+
+.position_clearButton {
+	position: absolute;
+	bottom: -52px;
+	left: 0px;
+}
+
+/*=================================
+リスト表示
+グループ管理画面
+グループホーム画面
+招待グループホーム画面
+メンバーグループ管理画面
+=================================*/
+.list_count_m {
+	text-align: right;
+	margin-top: 15px;
+	margin-left: 7px;
+	width: 738px;
+	font-size: 15px;
+}
+
+.list_couont_table_m {
+	margin-top: 10px;
+	margin-left: 7px;
+	width: 738px;
+	border-collapse: collapse;
+}
+
+.list_table_m {
+	margin-top: 10px;
+	margin-left: 7px;
+	margin-right: 7px;
+	width: 731px;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 15px;
+}
+
+.list_td_m {
+	vertical-align: top;
+	padding-bottom: 10px;
+	height: 150px;
+}
+
+.list_td_userName {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.image_userName {
+	margin-top: 10px;
+}
+
+/*=================================
+リスト表示
+招待リスト画面
+友達リスト画面
+友達申請リスト画面
+未読リスト画面
+=================================*/
+.frame_friendList {
+	width: 850px;
+}
+
+.list_count_l {
+	text-align: right;
+	margin-top: 15px;
+	width: 850px;
+	font-size: 15px;
+}
+
+.list_table_l {
+	margin-top: 10px;
+	margin-left: 7px;
+	margin-right: 7px;
+	width: 836px;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 15px;
+}
+
+.list_td_l {
+	vertical-align: top;
+	padding-bottom: 3px;
+}
+
+.position_count {
+	position: relative;
+}
+
+.unread_count1 {
+	position: absolute;
+	top: 40px;
+	right: -11px;
+	width: 22px;
+	height: 22px;
+	font-size: 15px;
+	color: #ffffff;
+	background-image: url("../templates/image/new_1_1.png");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.unread_count2 {
+	position: absolute;
+	top: 40px;
+	right: -13px;
+	width: 27px;
+	height: 22px;
+	font-size: 15px;
+	color: #ffffff;
+	background-image: url("../templates/image/new_2_1.png");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.unread_count3 {
+	position: absolute;
+	top: 40px;
+	right: -16px;
+	width: 32px;
+	height: 22px;
+	font-size: 15px;
+	color: #ffffff;
+	background-image: url("../templates/image/new_3_1.png");
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+/*=================================
+プロフィール画面
+=================================*/
+.frame_profile {
+	width: 670px;
+}
+
+.frame_profileList {
+	margin-top: 10px;
+	margin-left: 216px;
+	width: 454px;
+	min-height: 270px;
+}
+
+.frame_image_profile {
+	position: absolute;
+	background: #ffffff;
+	border: 3px solid #a52a2a;
+	width: 160px;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.table_profile {
+	border-collapse: collapse;
+	width: 439px;
+}
+
+.td_profile_label {
+	border: 1px solid #c0bfbf;
+	padding: 10px;
+	width: 100px;
+}
+
+.td_profile_value {
+	border: 1px solid #c0bfbf;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_button_editProfile {
+	text-align: right;
+	padding-top: 10px;
+}
+
+/*=================================
+プロフィール編集画面
+=================================*/
+.input_editProfile_caption {
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.frame_editProfile {
+	position: relative;
+	width: 650px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.frame_editProfileList {
+	margin-left: 216px;
+	padding-top: 10px;
+	width: 434px;
+}
+
+.table_editProfile {
+	border-collapse: collapse;
+	width: 434px;
+}
+
+.tr_editProfile {
+	height: 40px;
+}
+
+.input_editProfile {
+	width: 250px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.select_gender {
+	width: 105px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.select_date {
+	width: 70px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.textarea_introduce {
+	resize: none;
+	width: 250px;
+	height: 150px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+}
+
+.td_editProfile_label {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border: 1px solid #c0bfbf;
+}
+
+.input_profileImage {
+	font-size: 20px;
+	border: 2px solid #0000ff;
+	width:250px;
+}
+
+/*=================================
+メンバープロフィール画面
+=================================*/
+.table_memberDiaryList {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 645px;
+	font-size: 15px;
+	border-collapse: collapse;
+	border: 1px solid #c0bfbf;
+}
+
+.td_memberDiaryListDate {
+	width: 210px;
+	border: 1px solid #c0bfbf;
+	text-align: center;
+	padding: 5px;
+}
+
+.td_memberDiaryListDiaryTitle {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+.button_applyFriend {
+	position: absolute;
+	bottom: -50px;
+	left: 27px;
+}
+
+.noDiaryList {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/*=================================
+マイ日記リスト画面
+=================================*/
+.calendarTb {
+	margin: 0px auto;
+	text-align: center;
+	border-collapse: collapse;
+	width: 183px;
+}
+
+.calendarThead {
+	height: 30px;
+}
+
+.sunTh {
+	background-color: #d9d9d9;
+	color: #ff0000;
+	border: 1px solid #a6a6a6;
+}
+
+.satTh {
+	background-color: #d9d9d9;
+	color: #0070c0;
+	border: 1px solid #a6a6a6;
+}
+
+.everydayTh {
+	background-color: #d9d9d9;
+	border: 1px solid #a6a6a6;
+}
+
+.sunTd {
+	color: #ff0000;
+	border: 1px solid #a6a6a6;
+}
+
+.satTd {
+	color: #0070c0;
+	border: 1px solid #a6a6a6;
+}
+
+.everydayTd {
+	border: 1px solid #a6a6a6;
+}
+
+.position_button_createDiary {
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+.table_myDiaryList {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 725px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 15px;
+}
+
+.td_myDiaryListDate {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+	width: 210px;
+}
+
+.td_myDiaryListTitle {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+/*=================================
+ひとり言リスト画面
+=================================*/
+.table_mutterList_input {
+	position: relative;
+	width: 500px;
+	border-collapse: collapse;
+}
+
+.td_mutterList_input {
+	text-align: left;
+	vertical-align: top;
+}
+
+.table_mutterList_input2 {
+	border-collapse: collapse;
+	font-size: 15px;
+}
+
+.balloon_input_mutterList {
+	position: relative;
+	background-color: #b9cde5;
+	padding: 15px;
+	border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px;
+}
+
+.balloon_input_triangle_mutterList {
+	position: absolute;
+	bottom: 105px;
+	left: -50px;
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 25px solid transparent;
+	border-right: 40px solid #b9cde5;
+}
+
+.textarea_mutterList {
+	resize: none;
+	width: 462px;
+	height: 130px;
+	font-size: 16px;
+}
+
+.position_select_public {
+	margin-top: 10px;
+}
+
+.position_button_mutter {
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
+}
+
+.table_mutterList2 {
+	margin-left: 10px;
+	width: 600px;
+}
+
+.tr_mutterList2 {
+	vertical-align: top;
+}
+
+.td_mutterListImage2 {
+	width: 70px;
+}
+
+.td_mutterListMessage2 {
+	width: 530px;
+	height: 65px;
+	border: 1px solid #c0bfbf;
+	font-size: 13px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+/*=================================
+日記作成画面
+=================================*/
+.input_createDiary_caption {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.table_createDiary {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 725px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_createDiaryTitle {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+	width: 110px;
+}
+
+.td_createDiaryValue {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+.input_diaryTitle {
+	width: 578px;
+	font-size: 16px;
+	border: 2px solid #0000ff;
+	padding: 5px;
+}
+
+.textarea_diaryMessage {
+	resize: none;
+	width: 578px;
+	height: 175px;
+	font-size: 16px;
+	border: 2px solid #0000ff;
+	vertical-align: top;
+	padding: 5px;
+}
+
+.select_diaryPublicState {
+	width: 150px;
+	font-size: 16px;
+	border: 2px solid #0000ff;
+}
+
+.input_diaryPhoto {
+	font-size: 16px;
+	border: 2px solid #0000ff;
+	width:300px;
+}
+
+.position_createButton_diary {
+	margin-top: 10px;
+}
+
+/*=================================
+マイ日記画面
+=================================*/
+.myDiaryPublicState_caption {
+	font-size: 14px;
+	text-align: right;
+}
+
+.table_diaryComment {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 725px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+	border: 1px solid #c0bfbf;
+}
+
+.td_diaryCommentNo {
+	width: 70px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: top;
+	padding: 5px;
+	border: 1px solid #c0bfbf;
+}
+
+.td_diaryCommentUserName {
+	width: 360px;
+	padding: 5px;
+}
+
+.td_diaryCommentDate {
+	text-align: right;
+	padding: 5px;
+}
+
+.td_diaryCommentMessage {
+	padding: 5px;
+}
+
+.diaryCommentMessageValue {
+	margin-top: 5px;
+}
+
+/*=================================
+日記編集画面
+=================================*/
+.position_editPhoto {
+	padding-bottom: 5px;
+}
+
+/*=================================
+日記リスト画面
+=================================*/
+.table_diaryList {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 830px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 15px;
+}
+
+.td_diaryListDate {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+	width: 220px;
+	text-align: center;
+}
+
+.td_diaryListUserName {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+	width: 150px;
+}
+
+.td_diaryListDairyTitle {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+/*=================================
+友達検索画面
+=================================*/
+.frame_inputFriendInfo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 487px;
+}
+
+.table_inputFriendInfo {
+	border-collapse: collapse;
+	width: 434px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.frame_selectResult {
+	width: 493px;
+	margin-left: 507px;
+}
+
+.frame_selectResultList {
+	width: 493px;
+}
+
+.table_selectResultCount {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	width: 483px;
+	border-collapse: collapse;
+	font-size: 15px;
+}
+
+.table_selectResultList {
+	width: 493px;
+	border-collapse: collapse;
+}
+
+.td_selectResultListImage {
+	width: 60px;
+	text-align: center;
+}
+
+.td_selectResultListLabel {
+	width: 70px;
+	border: 1px solid #c0bfbf;
+	font-size: 13px;
+}
+
+.td_selectResultListMessage {
+	border: 1px solid #c0bfbf;
+	width: 281px;
+	font-size: 13px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_inviteButton {
+	text-align: center;
+}
+
+/*=================================
+設定画面
+=================================*/
+.frame_settings {
+	padding-bottom: 10px;
+	width: 800px;
+	font-size: 15px;
+}
+
+.frame_settingsValue {
+	position: absolute;
+	top: 69px;
+	left: 240px;
+	width: 580px;
+}
+
+.table_changeMail {
+	width: 560px;
+	border-collapse: collapse;
+}
+
+.td_changeMailLabel {
+	width: 180px;
+	height: 50px;
+	padding-left: 10px;
+	border: 1px solid #c0bfbf;
+}
+
+.td_changeMailValue {
+	border: 1px solid #c0bfbf;
+	padding-left: 10px;
+}
+
+.input_changeMail {
+	width: 310px;
+	font-size: 20px;
+	border: 2px solid #0000ff;
+	padding: 5px;
+}
+
+/*=================================
+農業日誌画面
+=================================*/
+.table_farmDiary {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 725px;
+	border-collapse: collapse;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.th_farmDiary {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+	background-color: #a9f5a9;
+}
+
+.td_farmDiaryValue {
+	border: 1px solid #c0bfbf;
+	padding: 5px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.textarea_work {
+	resize: none;
+	width: 276px;
+	height: 175px;
+	font-size: 16px;
+	border: 2px solid #0000ff;
+	vertical-align: top;
+	padding: 5px;
+}
+.link_farmDiaryCalendar_sun {
+	color: #ff0000;
+}
+
+.link_farmDiaryCalendar_sat {
+	color: #0070c0;
+}
+
+.link_farmDiaryCalendar_day {
+	color: #000000;
+}
+
+.color_schedule {
+	background-color: #F7BE81;
+}
+
+.border_input {
+	border-top: 1px solid #c0bfbf;
+	border-left: 1px solid #c0bfbf;
+	border-right: 1px solid #c0bfbf;
+	border-bottom: 1px solid #c0bfbf;
+	padding: 5px;
+}
+
+/*=================================
+画面
+=================================*/
+.frame_userAdmin {
+	padding-bottom: 10px;
+	width: 900px;
+	font-size: 15px;
+}
+
+.frame_adminMenu {
+	position: absolute;
+	left: 10px;
+	width: 230px;
+}
+
+.frame_adminValue {
+	margin-left: 250px;
+	width: 560px;
+}
+
+.input_userAdmin_caption {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.table_search {
+	width: 500px;
+	margin-left: 10px;
+}
+
+.td_searchValue {
+	width: 320px;
+}
+
+.input_searchValue {
+	width: 300px;
+	height: 25px;
+	font-size: 18px;
+}
+
+.table_adminUserList {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 540px;
+	border-collapse: collapse;
+}
+
+.table_adminUser {
+	border-collapse: collapse;
+	margin-bottom: 10px;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.td_adminUserListImage {
+	width: 100px;
+	text-align: center;
+}
+
+.td_adminUserListLabel {
+	width: 100px;
+	padding: 5px;
+	border: 1px solid #c0bfbf;
+	font-size: 13px;
+}
+
+.td_adminUserListMessage {
+	border: 1px solid #c0bfbf;
+	width: 276px;
+	font-size: 13px;
+	padding: 5px;
+}
+
+.input_adminUserListPass {
+	width: 220px;
+	height: 20px;
+}
+
+.select_userAuth {
+	width: 70px;
+	height: 20px;
+}
+
+.input_divisionNo {
+	width: 35px;
+	height: 20px;
+	text-align: center;
+}
+
+/*=================================
+画面
+=================================*/
+.textarea_infoAdmin {
+	resize: none;
+	width: 640px;
+	height: 120px;
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #000000;
+}
+
+.frame_infoAdmin {
+	padding-bottom: 10px;
+	width: 1000px;
+	font-size: 15px;
+}
+
+.frame_infoAdminValue {
+	margin-left: 250px;
+	width: 750px;
+}
+
+.table_infoAdminList {
+	width: 730px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 14px;
+}
+
+.th_infoAdminList_no {
+	width: 40px;
+	height: 25px;
+	padding: 5px;
+	background-color: #a9f5a9;
+	border-radius: 10px 0px 0px 10px / 10px 0px 0px 10px;
+	border: 1px solid #a9f5a9;
+}
+
+.th_infoAdminList_userName {
+	width: 150px;
+	height: 25px;
+	padding: 5px;
+	background-color: #a9f5a9;
+	border: 1px solid #a9f5a9;
+}
+
+.th_infoAdminList_message {
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+	background-color: #a9f5a9;
+	border: 1px solid #a9f5a9;
+}
+
+.th_infoAdminList_date {
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+	background-color: #a9f5a9;
+	border: 1px solid #a9f5a9;
+}
+
+.th_infoAdminList_date {
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+	background-color: #a9f5a9;
+	border-radius: 0px 10px 10px 0px / 0px 10px 10px 0px;
+	border: 1px solid #a9f5a9;
+}
+
+.th_infoAdminList_action {
+	width: 80px;
+	padding: 5px;
+}
+
+.td_infoAdminList_no {
+	width: 40px;
+	padding: 5px;
+	border-radius: 10px 0px 0px 10px / 10px 0px 0px 10px;
+	border: 1px solid #c0bfbf;
+	text-align: center;
+}
+
+.td_infoAdminList_userName {
+	width: 150px;
+	padding: 5px;
+	border-top: 1px solid #c0bfbf;
+	border-bottom: 1px solid #c0bfbf;
+	border-right: 1px solid #c0bfbf;
+	text-align: left;
+}
+
+.td_infoAdminList_message {
+	width: 200px;
+	padding: 5px;
+	border-top: 1px solid #c0bfbf;
+	border-bottom: 1px solid #c0bfbf;
+	border-right: 1px solid #c0bfbf;
+	text-align: left;
+}
+
+.td_infoAdminList_date {
+	width: 200px;
+	padding: 5px;
+	border-top: 1px solid #c0bfbf;
+	border-bottom: 1px solid #c0bfbf;
+	border-right: 1px solid #c0bfbf;
+	text-align: center;
+	border-radius: 0px 10px 10px 0px / 0px 10px 10px 0px;
+}
+
+.td_infoAdminList_action {
+	width: 80px;
+	padding: 5px;
+	text-align: center;
+}
+
